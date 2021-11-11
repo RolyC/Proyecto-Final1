@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <!--<meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">-->
+    <title>ProyectoFinal</title>
+    <link rel="stylesheet" href="estilo.css">
+    <!--ccs y html bootstrap-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
+    <!--para manejar iconos = https://fontawesome.com/v5.15/icons?d=gallery&p=2-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css">
+</head>
+<body>
+    <div class="main-header__div  container-fluid">
+        <div>
+            <img  class="main-header__title" src="data:image/png;base64,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" alt="">
+        </div>
+        <div class="main-buscar__container">
+            <input type="search">
+            <button class="btn btn-primary">Buscar</button>
+        </div>
+        <div class="main-txt__container">
+            <div class="main-llamada__txt">
+                <p><i class="fas fa-phone"></i> Llámanos (+57) (4) 448 1919</p>
+            </div>
+            <hr>
+            <div class="main-favoritos__txt">
+                <a href=""><i class="far fa-heart"></i> Lista de Favoritos</a>
+                <a href=""><i class="far fa-user"></i> Mis Pedidos</a>
+            </div>
+        </div>
+       
+    </div>
+    <div class="main-lista__container">
+        <nav class="container navbar navbar-expand-sm bg-blue mb-3">
+            <ul class="navbar-nav  items-links">
+                <li class="navbar-item"><a href="#" class="nav-link active">HOMBRES</a></li>
+                <li class="navbar-item"><a href="#" class="nav-link">MUJERES</a></li>
+                <li class="navbar-item"><a href="#" class="nav-link">NIÑOS</a></li>
+                <li class="navbar-item"><a href="#" class="nav-link">OFERTAS</a></li>
+                <li class="navbar-item"><a href="#" class="nav-link">CREDITOS</a></li>
+                <li class="navbar-item"><a href="#" class="nav-link">MARCAS</a></li>
+                <li class="navbar-item  item-facebook"><a href="https://www.facebook.com/UnivalleBolivia" class="navbar-link  fab fa-facebook-f"></a></li>
+                <li class="navbar-item  item-instagram"><a href="https://www.instagram.com/univalle_bolivia/?hl=es" class="navbar-link  fab fa-instagram"></a> </li>
+            </ul>
+        </nav>
+    </div>
+    <div>
+        <img class="DHombres" src="https://tiendasbranchos.vtexassets.com/assets/vtex.file-manager-graphql/images/7e25e783-6a5c-40af-b6f0-876f82b6be75___5e9b1da417fde7e91ff4336096621d1d.jpg" alt="">
+        <img class="DMujeres" src="https://tiendasbranchos.vtexassets.com/assets/vtex.file-manager-graphql/images/170115a2-3bb3-4134-b6e8-0d8279117816___5d5b7c3beff6d1729e41fadc8002f15e.jpg" alt="">
+    </div>
+</body>
+</html>

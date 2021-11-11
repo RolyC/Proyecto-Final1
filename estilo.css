@@ -1,0 +1,105 @@
+* {
+    box-sizing: border-box;/*tamaño de caja*/
+}
+body{
+    margin: 0;
+}
+img{
+    width: 500px;
+    height: 400px;
+}
+.DHombres{
+    margin-left: 150px;
+    margin-top: 30px;
+}
+.DMujeres{
+    margin-left: 30px;
+    margin-top: 30px;
+}
+.main-header__div{
+    padding: 10px;
+    overflow: hidden;
+    background: #fcec1d;
+    height: 120px;
+}
+.main-header__title{
+    font-size: 2.5em;
+    margin: 0 40px;
+    height: 120px;
+    width: 320px;
+    float: left;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.main-buscar__container{
+    display: flex;
+    float: left;
+    height: 120px;
+    width: 300px;
+    margin-left: 200px;
+    justify-content: center;
+    align-items: center;
+}
+input{
+    height: 40px;
+    width: 180px;
+}
+.main-txt__container{
+    justify-content: space-around;
+    height: 120px;
+    width: 350px;
+    float: right;
+    margin: 0 40px;
+    overflow: hidden;
+}
+.main-llamada__txt{
+    width: 300px;
+    height: 30px;
+    margin:0%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 13px;
+}
+.main-favoritos__txt{
+    height: 30px;
+    width: 350px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 17px;
+    color: red;
+}
+.main-lista__container{
+    display: flex;
+    align-items: center;
+    background:#334b91;
+    height: 60px;
+
+}
+.items-links{
+    width: 100%;
+    padding: 0%;
+    display: flex;
+    align-items: center;
+    color: yellow;
+}
+.item-facebook{
+    margin-left: 600px;
+    font-size: 25px;
+}
+.item-instagram{
+    margin-left: 20px;
+    font-size: 25px;
+    color: yellow;
+}
+li{
+    color: yellow;
+}
+ul{
+    color: yellow;
+}
+hr{
+    margin-top: 0%;
+}
